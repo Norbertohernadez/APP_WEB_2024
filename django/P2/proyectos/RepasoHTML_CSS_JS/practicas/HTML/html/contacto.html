@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi primer Web</title>
+</head>
+<body>
+    <h1>Mi primer Web</h1>
+
+    <table style="border: 1px solid black;">
+        <tr>
+            <td><a href="index.html">Inicio</a></td>
+        </tr>
+        <tr>
+            <td><a href="contenido.html">Contenido</a></td>
+        </tr>
+        <tr>
+            <td><a href="contacto.html">Contacto</a></td>
+        </tr>
+    </table>
+
+    <h2>Contacto</h2>
+    <form>
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="nombre" placeholder="Escribir tu Nombre" required>
+        <input type="submit" value="Enviar" name="enviar" id="guardar">
+        <br>
+        <br>
+        
+        <label for="Biografia">Biografia</label><br><br>
+        <textarea id="Biografia" cols="30" rows="10" placeholder="" style="resize:none;"></textarea>
+        <br>
+        <br>
+        <label for="Edad">Edad:</label><br>
+        <select id="Edad">
+            <option value="0 a 3">0 a 3</option>
+            <option value="4 a 5">4 a 5</option>
+
+
+        </select><br><br>
+        
+        <button onclick="window.location.href='mailto:example@gmail.com'">Enviar Gmail</button>
+    </form>
+</body>
+</html>
+
+
+
+
