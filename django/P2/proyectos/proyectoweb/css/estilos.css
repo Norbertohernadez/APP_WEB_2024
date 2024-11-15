@@ -1,0 +1,560 @@
+/* Aplicar estilos generales  */
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+/* APLICAR ESTILOS A EL HEADER "INICIO" */
+#inicio {
+    background-image: url(../img/fondo1.jpg);
+    background-size: cover; /*Imagen mas grandesita*/
+    height: 100vmin;
+    
+}
+
+.contenedor{
+    margin: auto;
+    width: 90%;
+    max-width: 1920px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu p{
+    display: inline;
+    font-size: 2vmax;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.lista{
+    display: flex;
+    list-style-type: none;
+    font-size: 1.5w;
+}
+
+.lista li {
+    margin-left: 1.5vw;
+    justify-content: center;
+}
+
+.btn-menu{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+.btn-menu:hover{
+    cursor: pointer;
+    color: white;
+    font-size: 1.4vw;
+   /* border: 1px solid black;*/
+    text-decoration: underline;
+}
+
+.btn-menu:active{
+    color: #f0ea328a;
+}
+
+.titular{
+    margin-top: 12rem;
+    text-align: center;
+
+}
+
+.titular h1{
+    font-size: 3vw;
+    margin: 0;
+}
+
+.titular h2{
+    font-size: 2vw;
+    margin-bottom: 4vw;
+}
+
+.btn{
+    background-color: #5db8f8;
+    padding: 2vw;
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.btn:hover{
+    font-size: 1.1vw;
+}
+
+.btn:active{
+    background-color: #f0ea328a;
+}
+
+
+/* Aplicar estilos a la seccion "sobremi" */
+
+.contenedor h3{
+    margin-top: 3rem;
+    font-size: 7vmin;
+    text-align: center;
+    font-weight: bold;
+}
+
+.contenedor-sobremi img{
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 5px #5db8f8;
+    width: 40vw;
+}
+
+.contenedor-sobremi img:hover{
+    border-radius: 20%;
+}
+
+.contenedor-parrafo-y-boton{
+    width: 45%;
+}
+
+.contenedor-parrafo-y-boton p{
+    font-size: 1.5vw;
+    color: black;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.contenedor-sobremi{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.email{
+    color: blue;
+    text-decoration: underline;
+    font-size: 1.7vw;
+    font-weight: bold;
+    margin-bottom: 2rem;
+
+}
+
+.email:hover{
+    color: #5db8f8;
+    font-size: 2.1vw;
+    font-weight: normal;
+}
+
+.email:active{
+    color:#5db8f8
+}
+
+
+/*APLICAR ESTILOS A LA SECCION DE SERVICIOS*/
+
+.contenedor-servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.servicio{
+    width: 23%;
+    padding: 2vw;
+    border-radius: 20%;
+    /* border: 1px solid black; */
+    margin-bottom: 2vw;
+    color: white;
+}
+
+.servicio p{
+    font-size: 2.5vmin;
+}
+
+.servicio h4{
+    font-size: 3vmin;
+}
+
+.azul{
+    background-color: cornflowerblue;
+}
+
+.celeste{
+    background-color: #5db8f8;
+}
+/* Aplicar estilos a el atributo class */
+
+[class^="icon-"]{
+    font-size: 5vmin;
+    float: right;
+}
+
+.icon-arrow-up{
+    color: #5db8f8;
+    margin-left: 2rem;
+    float: left;
+    text-decoration: none;
+    font-size: 5vmin;
+}
+
+
+/*APLICAR ESTILOS A "MIS TRABAJOS"*/
+
+
+#mistrabajos h2{
+    margin-top: 3rem;
+    font-size: 7vmin;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 7rem;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around; 
+    max-width: 1200px;
+    padding: 20px;
+    margin-left: 5rem;
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+    margin-left: 8rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 15px 0;
+    color: #333;
+}
+
+.card p {
+    color: #666;
+    padding: 0 15px 15px;
+}
+
+
+/*ESTILOS PARA PROYECTOS*/
+
+#proyectos h2{
+    margin-top: 7rem;
+    margin-top: 3rem;
+    font-size: 7vmin;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+/*ESTILOS PARA BLOG*/
+
+/* Estilos generales */
+#blog {
+    padding: 40px;
+    background-color: #f2f2f2;
+}
+
+#blog h3 {
+    margin-top: 7rem;
+    margin-top: 3rem;
+    font-size: 7vmin;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Contenedor de publicaciones */
+.blog-posts {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para cada publicación individual */
+.blog-post {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 350px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+/* Imagen destacada de cada post */
+.blog-post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Contenido de cada publicación */
+.post-content {
+    padding: 20px;
+}
+
+.post-content h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.post-content p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Botón de leer más */
+.read-more {
+    display: inline-block;
+    color: #5AB6EB;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #419CC1;
+}
+
+
+/*ESTILOS PARA CONTACTO*/
+
+#contacto h3{
+    margin-top: 7rem;
+    margin-top: 3rem;
+    font-size: 7vmin;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Estilos generales para la sección de contacto */
+#contacto {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+
+/* Estilos para la "cajita" del formulario */
+#seccion-coment {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+#seccion-coment h2 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario */
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilos para cada grupo de formulario */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Estilo para los campos de entrada */
+#comment-form input[type="text"],
+#comment-form input[type="email"],
+#comment-form textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+#comment-form input[type="text"]:focus,
+#comment-form input[type="email"]:focus,
+#comment-form textarea:focus {
+    border-color: #5AB6EB;
+    outline: none;
+}
+
+/* Estilo para el checkbox */
+.form-group.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.form-group.checkbox label {
+    margin-left: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Estilo para el botón de enviar */
+#comment-form button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #5AB6EB;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#comment-form button[type="submit"]:hover {
+    background-color: #419CC1;
+}
+
+/* Estilo para el ícono de flecha hacia arriba */
+.icon-arrow-up {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #5AB6EB;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.icon-arrow-up:hover {
+    color: #419CC1;
+}
+
+
+/* Sección de Proyectos */
+#pr-proyectos {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+#pr-proyectos h2 {
+    font-size: 2.5em;
+    color: black;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de las tarjetas de proyectos */
+.pr-proyectos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Estilo de cada tarjeta */
+.pro-tarjeta {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    text-align: left;
+}
+
+.pro-tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen del proyecto */
+.pro-imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Título del proyecto */
+.pro-tarjeta h3 {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Descripción del proyecto */
+.pro-tarjeta p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Enlace de Ver Proyecto */
+.pro-enlace {
+    font-size: 1em;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #3498db;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pro-enlace:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+
+/* Aplicar estilos al pie */
+
+.burbujas{
+    text-align: center;
+}
+
+.burbujaall img{
+    width: 5vmin;
+    height: 5vmin;
+}
+
+.burbujas p{
+    font-size: 1.5vw;
+}

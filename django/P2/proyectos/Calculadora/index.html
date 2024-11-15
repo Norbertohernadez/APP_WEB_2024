@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Áreas y Operaciones Básicas</title>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+    <h1>Calculadora </h1>
+    <div class="calculator">
+        <h2>Operaciones Básicas</h2>
+        <input type="number" id="num1" placeholder="Número 1">
+        <input type="number" id="num2" placeholder="Número 2">
+        <select id="operation">
+            <option value="add">Sumar</option>
+            <option value="subtract">Restar</option>
+            <option value="multiply">Multiplicar</option>
+            <option value="divide">Dividir</option>
+        </select>
+        <button onclick="calculate()">Calcular</button>
+        <p id="result"></p>
+    </div>
+    <div class="area-calculator">
+        <h2>Cálculo de Áreas</h2>
+        <select id="figure" onchange="showInputs()">
+            <option value="">Selecciona una figura</option>
+            <option value="triangle">Triángulo</option>
+            <option value="circle">Círculo</option>
+            <option value="square">Cuadrado</option>
+            <option value="rectangle">Rectángulo</option>
+        </select>
+        <div id="inputs"></div>
+        <button onclick="calculateArea()">Calcular Área</button>
+        <p id="areaResult"></p>
+        <div id="figureImage"></div> 
+    </div>
+    <script src="operaciones.js"></script>
+</body>
+</html>
