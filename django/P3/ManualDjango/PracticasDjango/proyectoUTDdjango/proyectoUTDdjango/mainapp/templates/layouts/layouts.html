@@ -19,9 +19,17 @@
     <nav>
         <ul>
             <li><a href="{% url "inicio" %}" >Inicio</a></li>
+            {% if user.email%}
             <li><a href="{% url "mision" %}">Misión</a></li>
             <li><a href="{% url "vision" %}">Visión</a></li>
             <li><a href="{% url "acercade" %}">Acerca de</a></li>
+            <li><a href="{% url "listado_articulos" %}"> Articulos</a></li>
+            <li><a href="{% url "listado_categorias" %}"> Categorias</a></li>
+            <li><a href="{% url "logout" %}">Cerrar Sesion</a></li>
+            {% else %}
+            <li><a href="{% url "Registro" %}">Registro</a></li>
+            <li><a href="{% url "login" %}">Inicio de sesion</a></li>
+            {% endif %}
         </ul>
     </nav>
     <section id="content">
